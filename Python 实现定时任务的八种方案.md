@@ -2,17 +2,17 @@
 
 **目录**
 
-    [利用while True: + sleep()实现定时任务]
+    **利用while True: + sleep()实现定时任务**
     
-    [使用Timeloop库运行定时任务]
+    **使用Timeloop库运行定时任务**
     
-    [利用threading.Timer实现定时任务]
+    **利用threading.Timer实现定时任务**
     
-    [利用内置模块sched实现定时任务]
+    **利用内置模块sched实现定时任务**
     
-    [利用调度模块schedule实现定时任务]
+    **利用调度模块schedule实现定时任务**
     
-    [利用任务框架APScheduler实现定时任务]
+    **利用任务框架APScheduler实现定时任务**
     
         Job 作业
         
@@ -30,9 +30,9 @@
         
         Scheduler的工作流程
         
-    [使用分布式消息系统Celery实现定时任务]
+    **使用分布式消息系统Celery实现定时任务**
     
-    [使用数据流工具Apache Airflow实现定时任务]
+    **使用数据流工具Apache Airflow实现定时任务**
     
         Airflow 产生的背景
         
@@ -40,7 +40,7 @@
         
         Airflow 的架构
     
-**[利用while True: + sleep()实现定时任务]**
+**利用while True: + sleep()实现定时任务**
 
     位于 time 模块中的 sleep(secs) 函数，可以实现令当前执行的线程暂停 secs 秒后再继续执行。所谓暂停，即令当前线程进入阻塞状态，当达到 sleep() 函数规定的时间后，再由阻塞状态转为就绪状态，等待 CPU 调度。
     
@@ -68,5 +68,5 @@
         
         sleep 是一个阻塞函数，也就是说 sleep 这一段时间，程序什么也不能操作。  
   
-**[使用Timeloop库运行定时任务]**  
+**使用Timeloop库运行定时任务**  
 
