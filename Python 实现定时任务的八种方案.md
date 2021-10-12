@@ -2,17 +2,17 @@
 
 **目录**
 
-    **利用while True: + sleep()实现定时任务**
+    利用while True: + sleep()实现定时任务
+  
+    使用Timeloop库运行定时任务
     
-    **使用Timeloop库运行定时任务**
+    利用threading.Timer实现定时任务
+   
+    利用内置模块sched实现定时任务
     
-    **利用threading.Timer实现定时任务**
+    利用调度模块schedule实现定时任务
     
-    **利用内置模块sched实现定时任务**
-    
-    **利用调度模块schedule实现定时任务**
-    
-    **利用任务框架APScheduler实现定时任务**
+    利用任务框架APScheduler实现定时任务
     
         Job 作业
         
@@ -30,9 +30,9 @@
         
         Scheduler的工作流程
         
-    **使用分布式消息系统Celery实现定时任务**
+    使用分布式消息系统Celery实现定时任务
     
-    **使用数据流工具Apache Airflow实现定时任务**
+    使用数据流工具Apache Airflow实现定时任务
     
         Airflow 产生的背景
         
