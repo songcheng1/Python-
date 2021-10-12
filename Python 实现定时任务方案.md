@@ -70,3 +70,36 @@
   
 **使用Timeloop库运行定时任务**  
 
+    Timeloop是一个库，可用于运行多周期任务。这是一个简单的库，它使用decorator模式在线程中运行标记函数。
+        
+    ```
+    import time
+    from timeloop import Timeloop
+    from datetime import timedelta
+    tl = Timeloop()
+    @tl.job(interval=timedelta(seconds=2))
+    def sample_job_every_2s():
+        print "2s job current time : {}".format(time.ctime())
+    @tl.job(interval=timedelta(seconds=5))
+    def sample_job_every_5s():
+        print "5s job current time : {}".format(time.ctime())
+    @tl.job(interval=timedelta(seconds=10))
+    def sample_job_every_10s():
+        print "10s job current time : {}".format(time.ctime())
+    ```
+**利用threading.Timer实现定时任务**
+
+    threading 模块中的 Timer 是一个非阻塞函数，比 sleep 稍好一点，timer最基本理解就是定时器，我们可以启动多个定时任务，这些定时器任务是异步执行，所以不存在等待顺序执行问题。
+    
+    Timer(interval, function, args=[ ], kwargs={ })
+
+        interval: 指定的时间 
+        
+        function: 要执行的方法
+        
+        args/kwargs: 方法的参数
+    
+    备注：Timer只能执行一次，这里需要循环调用，否则只能执行一次
+        
+    
+
