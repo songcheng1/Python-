@@ -26,7 +26,7 @@ if __name__ == '__main__':
     mongoRecordRes = db_mongo[COLLECTION].find()
 
     # 起30个线程同时进行数据同步
-    with ThreadPoolExecutor(30) as executor:
+    with ThreadPoolExecutor(10) as executor:
         # 返回一个迭代器：Returns an iterator equivalent to map(fn, iter).
         for result in executor.map(insert, mongoRecordRes):
             print(result.status_code, result.text)
