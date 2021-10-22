@@ -35,5 +35,9 @@ if __name__ == '__main__':
     from elasticsearch import Elasticsearch
     es = Elasticsearch(["host:9200"])
     # 获取数据量
-    es.count(index="index_name",doc_type="type_name")
+    data = es.count(index="index_name",doc_type="type_name")
     print(data)
+    # 单条数插入
+    item = {"name": "小明", "age": "8", "gender": "男"}
+    es.index(index="index_name", doc_type="type_name", body=item)
+
