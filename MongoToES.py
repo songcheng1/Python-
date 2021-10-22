@@ -30,3 +30,10 @@ if __name__ == '__main__':
         # 返回一个迭代器：Returns an iterator equivalent to map(fn, iter).
         for result in executor.map(insert, mongoRecordRes):
             print(result.status_code, result.text)
+
+    
+    from elasticsearch import Elasticsearch
+    es = Elasticsearch(["host:9200"])
+    # 获取数据量
+    es.count(index="index_name",doc_type="type_name")
+    print(data)
