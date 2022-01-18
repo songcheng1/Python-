@@ -57,9 +57,10 @@ ln -s /usr/local/python3/bin/pip3.8 /usr/bin/pip
 
 最后一行添加:
 
-```export PYTHON_HOME=/usr/local/python3
+```
+export PYTHON_HOME=/usr/local/python3
 
-   export PATH=$PYTHON_HOME/bin:$PATH
+export PATH=$PYTHON_HOME/bin:$PATH
 ```
 
 # 保存退出后 执行 source /etc/profile 执行环境变量文件后生效
