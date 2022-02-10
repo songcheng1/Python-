@@ -6,6 +6,7 @@
 
 #   3.调试
 
+# 函数Hook公式
 old_func = func
 func = function(argument){
   my task;
