@@ -76,6 +76,7 @@ WDV7B5UM4J-eyJsaWNlbnNlSWQiOiJXRFY3QjVVTTRKIiwibGljZW5zZWVOYW1lIjoia2lkZHkgaW5zZ
 
 # linux 执行curl
 FILE_PATH=`curl -k -s -F "_api_key=81d68433aefc538985ceb" -F "buildKey=xxxx.apk" https://xxx.xxx.xxx/xxx/app/xxxx`
+
 result=$(python -c "import json; k_json=json.loads('$FILE_PATH');print (k_json['data']['buildQRCodeURL'])")
 echo $result
   
