@@ -72,7 +72,7 @@ WDV7B5UM4J-eyJsaWNlbnNlSWQiOiJXRFY3QjVVTTRKIiwibGljZW5zZWVOYW1lIjoia2lkZHkgaW5zZ
 
 # 定期清除日志信息（每周一的0点,清除上上周日志信息）
 
-  0 0 * * 1  find /tmp/log/  -name "*.log" -mtime +6 -exec rm {} \; 
+  0 0 * * 1  find /tmp/log/  -name "*.log" -mtime +6 -exec rm {} \\; 
 
 # linux 执行curl
 FILE_PATH=`curl -k -s -F "_api_key=81d68433aefc538985ceb" -F "buildKey=xxxx.apk" https://xxx.xxx.xxx/xxx/app/xxxx`
