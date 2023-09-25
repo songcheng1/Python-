@@ -81,4 +81,16 @@ result=$(python -c "import json; k_json=json.loads('$FILE_PATH');print (k_json['
 echo $result
   
   
-  
+
+
+
+# Centos miniconda 快捷安装配置python3
+
+1. https://docs.conda.io/projects/miniconda/en/latest/
+
+2. source .bashrc
+
+3.conda create --name python3 python=3.11
+
+4. conda activate python3
+
