@@ -89,8 +89,8 @@ echo $result
 1. https://docs.conda.io/projects/miniconda/en/latest/
 
 2. source .bashrc
-
-3.conda create --name python3 python=3.11
+   
+3. conda create --name python3 python=3.11
 
 4. conda activate python3
 
